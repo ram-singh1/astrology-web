@@ -2,7 +2,7 @@
 
 A beautiful, modern website for Nakshatra Vedic Astrology services. Built with semantic HTML, a custom design system, and minimal dependencies.
 
-**Live:** [Nakshatra Website](https://nakshatra.example)  
+**Live:** [Nakshatra Website]([https://nakshatra.example](https://astrology-ief9ebdns-ram-singh1s-projects.vercel.app/))  
 **Owner:** Nakshatra (Vedic Astrologer, Ludhiana · Punjab · India)
 
 ---
