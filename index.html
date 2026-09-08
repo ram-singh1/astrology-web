@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nakshatra — Vedic Astrology &amp; Counsel</title>
+  <meta name="description" content="Nakshatra — eighteen years reading birth charts for seekers in forty countries. Honest, non-fear-based Vedic guidance on love, career, timing and remedies. Book a private consultation." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nakshatra — Vedic Astrology" />
+  <meta property="og:description" content="The stars incline, they do not bind. Private Vedic consultations, worldwide." />
+  <meta property="og:image" content="assets/illustrations/astrologer-portrait.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/mark.svg" />
+
+  <!-- Fonts: Fraunces (display serif) + Inter (text) — two families only.
+       Fraunces is loaded variable across optical size so the 5rem hero and
+       the 1.2rem card headings each get a correctly-drawn cut. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <!-- Bootstrap 5: loaded first so the design system below wins the cascade.
+       Used for the responsive offcanvas navigation only — not for layout. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Design system (component-organised, no framework layout) -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- No-JS safeguard: never hide content behind reveal animations -->
+  <noscript><style>.reveal{opacity:1;transform:none;filter:none}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== MASTHEAD ===================== -->
+  <header class="masthead" data-masthead>
+    <a class="masthead__brand" href="#top" aria-label="Nakshatra — home">
+      <img src="assets/icons/mark.svg" alt="" width="34" height="34" />
+      <span><b>Nakshatra</b><span>Vedic Astrology · Jyotish</span></span>
+    </a>
+    <nav class="masthead__nav offcanvas-md offcanvas-end" tabindex="-1" id="primaryNav" aria-label="Primary">
+      <div class="offcanvas-header">
+        <span class="masthead__panel-title">Menu</span>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#primaryNav" aria-label="Close menu"></button>
+      </div>
+      <div class="offcanvas-body">
+        <a class="link-underline" href="#almanac">Guidance</a>
+        <a class="link-underline" href="#chronicle">The Astrologer</a>
+        <a class="link-underline" href="#reckoning">How it works</a>
+        <a class="link-underline" href="#voices">Voices</a>
+      </div>
+    </nav>
+    <a class="btn btn--primary masthead__cta" href="#horizon">Book a reading <span class="btn__arrow" aria-hidden="true">→</span></a>
+    <button class="masthead__burger" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#primaryNav" aria-controls="primaryNav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ===================== 1 · OVERTURE (hero) ===================== -->
+    <section class="overture" aria-labelledby="overture-title">
+      <span class="overture__light parallax" data-parallax aria-hidden="true"></span>
+      <span class="overture__stars" aria-hidden="true"></span>
+      <img class="overture__constellation" src="assets/svg/constellation.svg" alt="" width="240" height="160" aria-hidden="true" />
+
+      <!-- Background and celestial layers stay full-bleed; the content grid
+           sits on the same rail as every other section. -->
+      <div class="overture__inner">
+        <div class="overture__intro reveal">
+          <p class="eyebrow">Jyotish · Since 2007</p>
+          <h1 class="t-display overture__title" id="overture-title">
+            Read the sky <em class="overture__accent">before</em> you choose your path.
+          </h1>
+        </div>
+
+        <p class="t-lead overture__lead reveal" data-delay="1">
+          Welcome to <strong>Nakshatra</strong>. I read your birth chart the way a gardener
+          reads soil — patiently, honestly, without flattery. What the planets incline, you
+          still decide.
+        </p>
+
+        <div class="overture__actions reveal" data-delay="2">
+          <a class="btn btn--accent" href="#horizon">Begin your reading <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="#almanac">Explore guidance</a>
+        </div>
+
+        <!-- Cosmic medallion: circular portrait framed by the complete zodiac ring -->
+        <figure class="overture__medallion reveal" data-delay="1" aria-hidden="false">
+          <span class="overture__halo" aria-hidden="true"></span>
+          <img class="overture__ring" src="assets/svg/zodiac-wheel.svg" alt="" width="660" height="660" aria-hidden="true" />
+          <img class="overture__face" src="assets/illustrations/astrologer-portrait.svg"
+               alt="Illustrated portrait of the Nakshatra astrologer, eyes closed in stillness"
+               width="620" height="780" />
+        </figure>
+
+        <ul class="overture__metrics reveal" data-delay="2" aria-label="At a glance">
+          <li class="metric"><b data-count="18" data-suffix="+">0</b><span>Years reading charts</span></li>
+          <li class="metric"><b data-count="12000" data-suffix="+" data-format="k">0</b><span>Consultations given</span></li>
+          <li class="metric"><b data-count="40" data-suffix="+">0</b><span>Countries served</span></li>
+          <li class="metric"><b data-count="96" data-suffix="%">0</b><span>Would return</span></li>
+        </ul>
+      </div><!-- /.overture__inner -->
+
+      <a class="overture__scroll" href="#almanac"><i aria-hidden="true"></i> Scroll</a>
+    </section>
+
+    <!-- ===================== 2 · ALMANAC (services) ===================== -->
+    <section class="almanac section" id="almanac" aria-labelledby="almanac-title">
+      <header class="almanac__head rail">
+        <p class="eyebrow reveal">Eight ways I can help</p>
+        <h2 class="t-h2 reveal" data-delay="1" id="almanac-title">
+          Guidance shaped to the question you actually carry.
+        </h2>
+      </header>
+
+      <ol class="almanac__index rail">
+        <li class="almanac__item almanac__item--lead reveal">
+          <span class="almanac__num t-num" aria-hidden="true">01</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">☉︎</span> Birth Chart Reading</h3>
+            <p>A full janma-kundali session — the map you were born under, read line by line, for the life you are actually living. The reading everything else builds on.</p>
+          </div>
+          <span class="almanac__kind">75 min · deep-dive</span>
+        </li>
+        <li class="almanac__item reveal">
+          <span class="almanac__num t-num" aria-hidden="true">02</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">♀︎</span> Love &amp; Marriage Timing</h3>
+            <p>Compatibility, guna-milan and the windows when commitment is best supported.</p>
+          </div>
+          <span class="almanac__kind">Relationship</span>
+        </li>
+        <li class="almanac__item reveal" data-delay="1">
+          <span class="almanac__num t-num" aria-hidden="true">03</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">☿︎</span> Career &amp; Money Direction</h3>
+            <p>Dasha-led timing for a switch, a launch, or the courage to wait.</p>
+          </div>
+          <span class="almanac__kind">Vocation</span>
+        </li>
+        <li class="almanac__item reveal">
+          <span class="almanac__num t-num" aria-hidden="true">04</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">☽︎</span> Muhurta — Auspicious Dates</h3>
+            <p>Choosing the right moment to begin: weddings, housewarmings, a new venture, a first flight.</p>
+          </div>
+          <span class="almanac__kind">Electional</span>
+        </li>
+        <li class="almanac__item reveal" data-delay="1">
+          <span class="almanac__num t-num" aria-hidden="true">05</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">♄︎</span> Remedies &amp; Rituals</h3>
+            <p>Grounded, non-fearful upaya — mantra, gemstone and charity matched to your chart.</p>
+          </div>
+          <span class="almanac__kind">Remedial</span>
+        </li>
+        <li class="almanac__item reveal">
+          <span class="almanac__num t-num" aria-hidden="true">06</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">♃︎</span> Child &amp; Family Charts</h3>
+            <p>Naming, temperament and study inclinations for the little ones you love.</p>
+          </div>
+          <span class="almanac__kind">Family</span>
+        </li>
+        <li class="almanac__item reveal" data-delay="1">
+          <span class="almanac__num t-num" aria-hidden="true">07</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">♆︎</span> Annual Forecast (Varshaphal)</h3>
+            <p>Your solar-return year mapped month by month, so nothing arrives unannounced.</p>
+          </div>
+          <span class="almanac__kind">Yearly</span>
+        </li>
+        <li class="almanac__item almanac__item--wide reveal">
+          <span class="almanac__num t-num" aria-hidden="true">08</span>
+          <div class="almanac__body">
+            <h3 class="t-h3"><span class="almanac__mark" aria-hidden="true">☊︎</span> Corporate &amp; Founder Sessions</h3>
+            <p>Private counsel for founders and teams — decision timing, partnership fit, and the temperament of a launch window.</p>
+          </div>
+          <span class="almanac__kind">On retainer</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== 3 · CHRONICLE (about + why) ===================== -->
+    <section class="chronicle section" id="chronicle" aria-labelledby="chronicle-title">
+      <div class="chronicle__grid rail">
+        <div>
+          <p class="eyebrow reveal">The person behind the chart</p>
+          <h2 class="t-h2 chronicle__title reveal" data-delay="1" id="chronicle-title">
+            I did not choose astrology. A grandmother, a lamp, and a stubborn question chose it for me.
+          </h2>
+          <div class="stack measure reveal" data-delay="2">
+            <p class="t-body">
+              I grew up in Varanasi watching my grandmother trace planets in the margins of an
+              almanac. When my father fell ill and every doctor shrugged, she opened his chart,
+              named the month things would turn — and they did. I spent the next eighteen years
+              trying to earn that same steadiness.
+            </p>
+            <p class="t-body">
+              Today I read charts full-time from Ludhiana, for seekers in forty countries. I will
+              never tell you the future is fixed. I will tell you the weather — and help you pack.
+            </p>
+          </div>
+          <p class="chronicle__sign reveal" data-delay="2">— Nakshatra</p>
+
+          <ol class="chronicle__timeline" aria-label="Milestones">
+            <li class="reveal"><b class="t-num">2007</b><span>First public readings on the Kashi ghats</span></li>
+            <li class="reveal" data-delay="1"><b class="t-num">2013</b><span>Jyotish Acharya, Banaras Hindu University</span></li>
+            <li class="reveal" data-delay="2"><b class="t-num">2018</b><span>Studio &amp; teaching practice, Ludhiana</span></li>
+            <li class="reveal" data-delay="3"><b class="t-num">2024</b><span>12,000th consultation across 40 countries</span></li>
+          </ol>
+        </div>
+
+        <aside class="chronicle__trust reveal" data-delay="1" aria-label="Why choose him">
+          <h3 class="t-h3">Why seekers stay with me</h3>
+          <ul class="chronicle__reasons">
+            <li>
+              <i aria-hidden="true">◈</i>
+              <b>No fear-selling, ever.</b>
+              <p>No “curse” to remove for a fee. Remedies are optional, modest and explained.</p>
+            </li>
+            <li>
+              <i aria-hidden="true">◈</i>
+              <b>Classical &amp; precise.</b>
+              <p>Parashari &amp; Jaimini methods, hand-checked — not app-generated printouts.</p>
+            </li>
+            <li>
+              <i aria-hidden="true">◈</i>
+              <b>You keep the recording.</b>
+              <p>Every session is recorded and yours to revisit, with written notes.</p>
+            </li>
+            <li>
+              <i aria-hidden="true">◈</i>
+              <b>Plain answers.</b>
+              <p>If a chart can’t tell you something, I say so. No cold reading.</p>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== 4 · SUMMON (CTA band) ===================== -->
+    <section class="summon" aria-label="Invitation to book">
+      <div class="summon__grid rail">
+        <h2 class="t-h2 reveal">A single honest conversation can change how a whole year feels.</h2>
+        <div class="summon__act reveal" data-delay="1">
+          <p>Private video sessions, worldwide. Your chart is prepared before we ever meet.</p>
+          <a class="btn btn--light" href="#horizon">Reserve your slot <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5 · RECKONING (how it works + pricing) ===================== -->
+    <section class="reckoning section" id="reckoning" aria-labelledby="reckoning-title">
+      <header class="reckoning__head rail">
+        <p class="eyebrow reveal">Nothing hidden</p>
+        <h2 class="t-h2 reveal" data-delay="1" id="reckoning-title">
+          How a reading actually works — and what it costs.
+        </h2>
+        <p class="t-lead measure reveal" data-delay="2">
+          Most people hesitate to book an astrologer for two reasons: they don’t know what will
+          happen in the room, and they’re afraid of a surprise bill. So here is both, in the open.
+        </p>
+      </header>
+
+      <ol class="reckoning__steps rail">
+        <li class="reckoning__step reveal">
+          <span class="reckoning__num t-num">1</span>
+          <h3 class="t-h3">Share your birth details</h3>
+          <p>Date, exact time and place. I cast and study your chart before we meet — no live guesswork.</p>
+        </li>
+        <li class="reckoning__step reveal" data-delay="1">
+          <span class="reckoning__num t-num">2</span>
+          <h3 class="t-h3">We sit together</h3>
+          <p>A calm video call. You bring the real questions; I bring the chart and plain answers.</p>
+        </li>
+        <li class="reckoning__step reveal" data-delay="2">
+          <span class="reckoning__num t-num">3</span>
+          <h3 class="t-h3">You leave with a map</h3>
+          <p>Recording, written notes, timing windows and — only if useful — a short list of remedies.</p>
+        </li>
+      </ol>
+
+      <div class="reckoning__tiers rail">
+        <article class="reckoning__tier surface lift reveal">
+          <h3 class="t-h3">First Light</h3>
+          <p class="reckoning__for">One question, answered well</p>
+          <p class="reckoning__price t-num"><small>₹</small>2,100</p>
+          <ul>
+            <li>30-minute focused call</li>
+            <li>One life area</li>
+            <li>Recording &amp; notes</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#horizon">Choose First Light</a>
+        </article>
+        <article class="reckoning__tier surface reckoning__tier--featured reveal" data-delay="1">
+          <span class="reckoning__flag">Most chosen</span>
+          <h3 class="t-h3">Full Chart</h3>
+          <p class="reckoning__for">The complete birth-chart reading</p>
+          <p class="reckoning__price t-num"><small>₹</small>5,400</p>
+          <ul>
+            <li>75-minute deep-dive</li>
+            <li>Career, love, health, timing</li>
+            <li>Dasha forecast + remedies</li>
+            <li>Recording, notes &amp; one follow-up</li>
+          </ul>
+          <a class="btn btn--accent btn--block" href="#horizon">Choose Full Chart <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </article>
+        <article class="reckoning__tier surface lift reveal" data-delay="2">
+          <h3 class="t-h3">The Year Ahead</h3>
+          <p class="reckoning__for">Retainer for founders &amp; families</p>
+          <p class="reckoning__price t-num"><small>₹</small>18,000</p>
+          <ul>
+            <li>Quarterly sessions</li>
+            <li>Muhurta on demand</li>
+            <li>Priority messaging</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#horizon">Enquire for retainer</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== 6 · DISPATCHES (YouTube feed) ===================== -->
+    <section class="dispatches section" id="watch" aria-labelledby="dispatches-title">
+      <header class="dispatches__head rail">
+        <div class="flow-head">
+          <p class="eyebrow reveal">From the studio</p>
+          <h2 class="t-h2 reveal" data-delay="1" id="dispatches-title">Watch before you book.</h2>
+        </div>
+        <a class="link-underline t-em reveal" data-delay="2" data-yt-link
+           href="https://www.youtube.com/@KRSchannel" target="_blank" rel="noopener">Subscribe on YouTube ↗</a>
+      </header>
+
+      <div class="dispatches__grid rail" data-yt-grid aria-live="polite">
+        <div class="dispatches__skeleton"></div>
+        <div class="dispatches__skeleton"></div>
+        <div class="dispatches__skeleton"></div>
+        <div class="dispatches__skeleton"></div>
+      </div>
+      <p class="dispatches__status t-small rail" data-yt-status hidden></p>
+    </section>
+
+    <!-- ===================== 7 · VOICES (testimonials) ===================== -->
+    <section class="voices section" id="voices" aria-labelledby="voices-title">
+      <!-- Head carries the aggregate rating on the right: it fills what was
+           dead space beside a short heading, and puts the strongest trust
+           signal above the quotes instead of in a box below them. -->
+      <header class="voices__head rail">
+        <div class="voices__headline">
+          <p class="eyebrow reveal">In their words</p>
+          <h2 class="t-h2 reveal" data-delay="1" id="voices-title">
+            Three thousand strangers who became regulars.
+          </h2>
+        </div>
+        <div class="voices__score reveal" data-delay="2">
+          <b class="t-num" data-count="4900" data-format="decimal">0</b>
+          <span class="voices__stars" role="img" aria-label="Rated 4.9 out of 5">★︎★︎★︎★︎★︎</span>
+          <span class="voices__score-note">Average across every review platform</span>
+        </div>
+      </header>
+
+      <div class="voices__mosaic rail">
+        <blockquote class="voices__lead voices__quote reveal">
+          <span class="voices__mark" aria-hidden="true">”</span>
+          <p>“He told me to wait four months before quitting. I did. The offer that came in month
+          five is the job I have now. Nakshatra doesn’t sell hope — it sells timing.”</p>
+          <cite>
+            <span class="voices__who">
+              <span class="voices__avatar" aria-hidden="true">AR</span>
+              <span><b>Ananya R.</b><span>Product lead · Bengaluru</span></span>
+            </span>
+          </cite>
+        </blockquote>
+        <blockquote class="voices__q2 voices__quote reveal" data-delay="1">
+          <p>“No fear, no upselling. Just a calm hour that made a hard year make sense.”</p>
+          <cite>
+            <span class="voices__who">
+              <span class="voices__avatar" aria-hidden="true">DM</span>
+              <span><b>David M.</b><span>London</span></span>
+            </span>
+          </cite>
+        </blockquote>
+        <blockquote class="voices__q3 voices__quote reveal">
+          <p>“Our wedding date came from him. Both families finally agreed on something.”</p>
+          <cite>
+            <span class="voices__who">
+              <span class="voices__avatar" aria-hidden="true">MR</span>
+              <span><b>Meera &amp; Rohit</b><span>Toronto</span></span>
+            </span>
+          </cite>
+        </blockquote>
+        <blockquote class="voices__q4 voices__quote reveal" data-delay="1">
+          <p>“I’ve seen a dozen astrologers. He’s the only one who admitted what the chart couldn’t say.”</p>
+          <cite>
+            <span class="voices__who">
+              <span class="voices__avatar" aria-hidden="true">FA</span>
+              <span><b>Fatima A.</b><span>Dubai</span></span>
+            </span>
+          </cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===================== 8 · HORIZON (final CTA) ===================== -->
+    <section class="horizon" id="horizon" aria-labelledby="horizon-title">
+      <span class="horizon__stars" aria-hidden="true"></span>
+      <img class="horizon__wheel" src="assets/svg/zodiac-wheel.svg" alt="" width="230" height="230" aria-hidden="true" />
+      <div class="horizon__inner rail--tight">
+        <p class="eyebrow reveal">Your chart is already waiting</p>
+        <h2 class="t-h2 reveal" data-delay="1" id="horizon-title">Let’s read the sky together.</h2>
+        <p class="t-lead horizon__lead measure reveal" data-delay="2">
+          Tell me your birth date, time and place. I’ll prepare your chart and send two or three
+          times that suit both of us — usually within a day.
+        </p>
+        <form class="horizon__form reveal" data-delay="3" data-book novalidate>
+          <label class="field"><span>Your name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label class="field"><span>Email</span>
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+          <label class="field"><span>What weighs on you?</span>
+            <input type="text" name="topic" placeholder="Career, love, timing…" />
+          </label>
+          <button class="btn" type="submit">Request my times <span class="btn__arrow" aria-hidden="true">→</span></button>
+          <p class="horizon__ok" data-book-ok hidden>Received. Watch your inbox — I read every note myself. ☾︎</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 9 · COLOPHON (footer) ===================== -->
+  <footer class="colophon" aria-label="Footer">
+    <div class="colophon__grid rail">
+      <div>
+        <img src="assets/icons/mark.svg" alt="" width="44" height="44" loading="lazy" />
+        <p class="colophon__word">Nakshatra</p>
+        <p class="colophon__tag">The stars incline, they do not bind.</p>
+      </div>
+      <nav class="colophon__col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a class="link-underline" href="#almanac">Guidance</a>
+        <a class="link-underline" href="#chronicle">The Astrologer</a>
+        <a class="link-underline" href="#reckoning">How it works</a>
+        <a class="link-underline" href="#watch">Watch</a>
+      </nav>
+      <div class="colophon__col">
+        <h4>Reach me</h4>
+        <a class="link-underline" href="mailto:hello@nakshatra.example">hello@nakshatra.example</a>
+        <a class="link-underline" href="tel:+910000000000">+91 00000 00000</a>
+        <p>Ludhiana · Punjab · India</p>
+        <div class="colophon__social">
+          <a class="link-underline" href="#">YouTube</a>
+          <a class="link-underline" href="#">Instagram</a>
+          <a class="link-underline" href="#">WhatsApp</a>
+        </div>
+      </div>
+      <div class="colophon__col">
+        <h4>A note</h4>
+        <p>Astrology is offered here as reflection and counsel, not as a substitute for medical,
+        legal or financial advice. You always hold the final word on your own life.</p>
+      </div>
+    </div>
+    <div class="colophon__foot rail">
+      <p>&copy; <span data-year>2026</span> Nakshatra. Crafted under a waxing moon.</p>
+      <a class="link-underline" href="#top">Back to the top ↑</a>
+    </div>
+    <img class="colophon__constellation" src="assets/svg/constellation.svg" alt="" width="260" height="173" loading="lazy" aria-hidden="true" />
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="js/utilities.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/youtube.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

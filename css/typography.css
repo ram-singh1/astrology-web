@@ -1,0 +1,91 @@
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: var(--fw-semi);
+  color: var(--c-ink);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-head);
+  font-variation-settings: "SOFT" 18, "WONK" 0;
+  text-wrap: balance;
+}
+
+.t-display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  font-weight: var(--fw-regular);
+  font-variation-settings: "SOFT" 30, "WONK" 1;
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-display);
+  color: var(--c-ink);
+  text-wrap: balance;
+}
+.t-h1 { font-size: var(--fs-h1); line-height: var(--lh-tight); letter-spacing: var(--tracking-display); }
+.t-h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semi);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-head);
+  color: var(--c-ink);
+  text-wrap: balance;
+}
+.t-h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-head);
+  color: var(--c-ink);
+}
+
+.t-lead {
+  font-family: var(--font-text);
+  font-size: var(--fs-lead);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--c-ink-soft);
+  text-wrap: pretty;
+}
+.t-body  { font-size: var(--fs-body);  line-height: var(--lh-loose); color: var(--c-ink-soft); }
+.t-small { font-size: var(--fs-small); line-height: var(--lh-normal); color: var(--c-muted); }
+
+.t-caption {
+  font-family: var(--font-text);
+  font-size: var(--fs-caption);
+  line-height: var(--lh-normal);
+  color: var(--c-muted);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .7em;
+  font-family: var(--font-ui);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semi);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--c-rust);
+}
+.eyebrow::before {
+  content: "";
+  inline-size: 2.2em;
+  block-size: 1.5px;
+  background: currentColor;
+  opacity: .6;
+}
+.eyebrow--plain::before { display: none; }
+
+.t-em      { color: var(--c-terracotta); }
+.t-em-gold { color: var(--c-gold); }
+strong     { font-weight: var(--fw-semi); color: inherit; }
+
+.t-num {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums lining-nums;
+  font-variation-settings: "SOFT" 20, "WONK" 0;
+  letter-spacing: -.01em;
+}
+
+.measure     { max-width: 60ch; }
+.measure--sm { max-width: 44ch; }
+.measure--xs { max-width: 32ch; }

@@ -1,0 +1,19 @@
+.rail        { inline-size: var(--rail);       margin-inline: auto; }
+.rail--tight { inline-size: var(--rail-tight); margin-inline: auto; }
+.rail--wide  { inline-size: var(--rail-wide);  margin-inline: auto; }
+
+.section { padding-block: var(--section-y); position: relative; }
+
+.stack > * + * { margin-block-start: var(--space-md); }
+.stack-sm > * + * { margin-block-start: var(--space-sm); }
+.stack-lg > * + * { margin-block-start: var(--space-lg); }
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.flow-head { max-inline-size: 62ch; }
+.flow-head > * + * { margin-block-start: var(--space-sm); }

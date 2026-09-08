@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 780" role="img" aria-label="Illustrated portrait of the Nakshatra astrologer">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="#FBF3E3"/>
+      <stop offset="62%" stop-color="#F2E5CD"/>
+      <stop offset="100%" stop-color="#E4D2B2"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="33%" r="40%">
+      <stop offset="0%" stop-color="#F7D993" stop-opacity=".9"/>
+      <stop offset="55%" stop-color="#E8B449" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#E0A526" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="skin" x1=".25" y1="0" x2=".85" y2="1">
+      <stop offset="0%" stop-color="#EEC49A"/>
+      <stop offset="46%" stop-color="#DFAE7E"/>
+      <stop offset="100%" stop-color="#BE8659"/>
+    </linearGradient>
+    <radialGradient id="cheek" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9764A" stop-opacity=".33"/>
+      <stop offset="100%" stop-color="#C9764A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="1" y1="0" x2="0" y2=".4">
+      <stop offset="0%" stop-color="#FFE9C2" stop-opacity=".85"/>
+      <stop offset="42%" stop-color="#FFE9C2" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="hair" x1=".2" y1="0" x2=".9" y2="1">
+      <stop offset="0%" stop-color="#4A3323"/>
+      <stop offset="55%" stop-color="#33231A"/>
+      <stop offset="100%" stop-color="#241811"/>
+    </linearGradient>
+    <linearGradient id="beard" x1=".3" y1="0" x2=".8" y2="1">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="55%" stop-color="#EFE4D0"/>
+      <stop offset="100%" stop-color="#D3C2A5"/>
+    </linearGradient>
+
+    <linearGradient id="robe" x1=".1" y1="0" x2=".95" y2="1">
+      <stop offset="0%" stop-color="#C9603C"/>
+      <stop offset="55%" stop-color="#A94526"/>
+      <stop offset="100%" stop-color="#87301A"/>
+    </linearGradient>
+    <linearGradient id="shawl" x1=".2" y1="0" x2=".9" y2="1">
+      <stop offset="0%" stop-color="#F0C766"/>
+      <stop offset="60%" stop-color="#DFA733"/>
+      <stop offset="100%" stop-color="#BE8518"/>
+    </linearGradient>
+
+    <clipPath id="faceClip">
+      <path d="M310 268 C378 268 424 316 424 392 C424 452 404 506 372 540
+               C352 561 332 572 310 572 C288 572 268 561 248 540
+               C216 506 196 452 196 392 C196 316 242 268 310 268 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="620" height="780" fill="url(#bg)"/>
+  <circle cx="310" cy="300" r="300" fill="url(#halo)"/>
+
+  <!-- faint radiant behind the head -->
+  <g stroke="#B8860B" stroke-width="1.2" opacity=".26" stroke-linecap="round">
+    <line x1="310" y1="44" x2="310" y2="112"/>
+    <line x1="188" y1="96" x2="226" y2="152"/>
+    <line x1="432" y1="96" x2="394" y2="152"/>
+    <line x1="120" y1="232" x2="186" y2="252"/>
+    <line x1="500" y1="232" x2="434" y2="252"/>
+    <line x1="150" y1="150" x2="200" y2="196"/>
+    <line x1="470" y1="150" x2="420" y2="196"/>
+  </g>
+
+  <!-- ================= shoulders / robe ================= -->
+  <path d="M104 780 C104 626 176 548 310 548 C444 548 516 626 516 780 Z" fill="url(#robe)"/>
+  <!-- fold shading -->
+  <path d="M170 780 C176 672 214 606 286 574 C232 596 190 664 182 780 Z" fill="#7A2A14" opacity=".28"/>
+  <path d="M450 780 C444 672 406 606 334 574 C388 596 430 664 438 780 Z" fill="#7A2A14" opacity=".2"/>
+  <path d="M310 566 L310 780" stroke="#6E2410" stroke-width="2" opacity=".35"/>
+  <!-- shoulder rim light, catching the halo -->
+  <path d="M330 552 C420 560 486 626 504 726" fill="none" stroke="#F5C98A" stroke-width="5" opacity=".33" stroke-linecap="round"/>
+
+  <!-- shawl across the chest -->
+  <path d="M226 576 C268 654 352 654 394 576 L406 780 L214 780 Z" fill="url(#shawl)"/>
+  <path d="M226 576 C268 654 352 654 394 576" fill="none" stroke="#A97A12" stroke-width="2.4" opacity=".8"/>
+  <path d="M248 640 C276 690 344 690 372 640" fill="none" stroke="#A97A12" stroke-width="1.6" opacity=".4"/>
+  <path d="M238 700 C272 742 348 742 382 700" fill="none" stroke="#A97A12" stroke-width="1.6" opacity=".3"/>
+
+  <!-- ================= neck ================= -->
+  <path d="M268 486 L268 556 Q310 590 352 556 L352 486 Z" fill="url(#skin)"/>
+  <path d="M268 492 Q310 540 352 492 L352 470 L268 470 Z" fill="#9C6A44" opacity=".38"/>
+
+  <!-- ================= head ================= -->
+  <path d="M310 268 C378 268 424 316 424 392 C424 452 404 506 372 540
+           C352 561 332 572 310 572 C288 572 268 561 248 540
+           C216 506 196 452 196 392 C196 316 242 268 310 268 Z" fill="url(#skin)"/>
+  <g clip-path="url(#faceClip)">
+    <!-- temple + jaw modelling -->
+    <ellipse cx="236" cy="410" rx="42" ry="76" fill="#A9714A" opacity=".13"/>
+    <ellipse cx="252" cy="452" rx="40" ry="52" fill="url(#cheek)"/>
+    <ellipse cx="368" cy="452" rx="40" ry="52" fill="url(#cheek)"/>
+    <!-- forehead light -->
+    <ellipse cx="322" cy="318" rx="58" ry="30" fill="#FFE7C4" opacity=".14"/>
+    <!-- rim light down the right edge -->
+    <rect x="196" y="268" width="228" height="304" fill="url(#rim)"/>
+  </g>
+
+  <!-- ears -->
+  <path d="M198 396 C186 392 182 414 190 432 C196 446 206 448 208 440 Z" fill="#D8A576"/>
+  <path d="M422 396 C434 392 438 414 430 432 C424 446 414 448 412 440 Z" fill="#CE9868"/>
+
+  <!-- ================= beard ================= -->
+  <path d="M200 404 C204 512 246 584 310 600 C374 584 416 512 420 404
+           C412 470 384 512 310 516 C236 512 208 470 200 404 Z" fill="url(#beard)"/>
+  <!-- strand separations -->
+  <g fill="none" stroke="#C8B698" stroke-width="1.8" opacity=".55" stroke-linecap="round">
+    <path d="M232 452 C244 528 272 566 310 578"/>
+    <path d="M264 470 C270 532 288 566 310 578"/>
+    <path d="M388 452 C376 528 348 566 310 578"/>
+    <path d="M356 470 C350 532 332 566 310 578"/>
+    <path d="M310 520 L310 580"/>
+  </g>
+  <!-- moustache -->
+  <path d="M264 442 C284 430 336 430 356 442 C338 456 282 456 264 442 Z" fill="#F6EEDE"/>
+  <path d="M264 442 C284 430 336 430 356 442" fill="none" stroke="#CDBB9C" stroke-width="1.6" opacity=".7"/>
+
+  <!-- ================= hair + topknot ================= -->
+  <path d="M196 372 C192 282 244 230 310 230 C376 230 428 282 424 372
+           C420 336 396 306 356 296 C388 278 370 250 336 252
+           C352 228 318 210 310 224 C302 210 268 228 284 252
+           C250 250 232 278 264 296 C224 306 200 336 196 372 Z" fill="url(#hair)"/>
+  <!-- hair sheen -->
+  <path d="M246 300 C258 262 286 244 314 240" fill="none" stroke="#7C5A3E" stroke-width="7" opacity=".38" stroke-linecap="round"/>
+  <path d="M368 300 C358 268 340 250 320 242" fill="none" stroke="#6A4B33" stroke-width="5" opacity=".26" stroke-linecap="round"/>
+  <ellipse cx="310" cy="208" rx="31" ry="35" fill="url(#hair)"/>
+  <path d="M296 190 C302 180 320 180 326 190" fill="none" stroke="#7C5A3E" stroke-width="4" opacity=".4" stroke-linecap="round"/>
+
+  <!-- ================= tilak ================= -->
+  <path d="M303 300 Q310 258 317 300 Q310 318 303 300 Z" fill="#C6603C"/>
+  <path d="M306 296 Q310 268 314 296" fill="none" stroke="#8E2F16" stroke-width="1.4" opacity=".5"/>
+  <circle cx="310" cy="330" r="5.5" fill="#9C3D22"/>
+
+  <!-- ================= brows, eyes, nose, mouth ================= -->
+  <path d="M254 356 Q286 342 314 356" fill="none" stroke="#2E2018" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M306 356 Q334 342 366 356" fill="none" stroke="#2E2018" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- closed, serene eyes with a soft lid crease -->
+  <path d="M258 388 Q286 402 312 388" fill="none" stroke="#4A3323" stroke-width="3" stroke-linecap="round"/>
+  <path d="M308 388 Q334 402 362 388" fill="none" stroke="#4A3323" stroke-width="3" stroke-linecap="round"/>
+  <path d="M262 380 Q286 390 308 380" fill="none" stroke="#B98A5F" stroke-width="1.6" opacity=".7" stroke-linecap="round"/>
+  <path d="M312 380 Q334 390 358 380" fill="none" stroke="#B98A5F" stroke-width="1.6" opacity=".7" stroke-linecap="round"/>
+  <!-- nose -->
+  <path d="M310 378 C304 400 300 414 300 422 Q310 432 320 422 C320 414 316 400 310 378 Z" fill="#C68B5C" opacity=".55"/>
+  <path d="M298 424 Q310 434 322 424" fill="none" stroke="#A5623A" stroke-width="1.8" opacity=".65" stroke-linecap="round"/>
+  <!-- mouth, just visible within the moustache -->
+  <path d="M290 458 Q310 468 330 458" fill="none" stroke="#8E4E2C" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

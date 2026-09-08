@@ -1,0 +1,92 @@
+:root {
+  /* Type families (two only) */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-text:    "Inter", system-ui, -apple-system, sans-serif;
+  --font-ui:      var(--font-text);
+
+  /* Fluid editorial type scale */
+  --fs-display: clamp(2.9rem, 1.9rem + 4.4vw, 5.25rem);
+  --fs-h1:      clamp(2.3rem, 1.7rem + 2.6vw, 3.5rem);
+  --fs-h2:      clamp(1.8rem, 1.45rem + 1.7vw, 2.75rem);
+  --fs-h3:      clamp(1.2rem, 1.08rem + .55vw, 1.5rem);
+  --fs-lead:    clamp(1.1rem, 1.02rem + .4vw, 1.35rem);
+  --fs-body:    1.0625rem;
+  --fs-small:   .9375rem;
+  --fs-caption: .8125rem;
+  --fs-button:  .875rem;
+
+  --lh-tight:   1.04;
+  --lh-snug:    1.22;
+  --lh-normal:  1.5;
+  --lh-loose:   1.68;
+
+  --tracking-display: -.012em;
+  --tracking-head:    -.008em;
+  --tracking-flat:    0;
+  --tracking-wide:    .16em;
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semi:    600;
+  --fw-bold:    700;
+
+  /* Color: warm light system */
+  --c-ivory:     #FBF6EC;
+  --c-parchment: #F4EBD9;
+  --c-sand:      #EADCC2;
+  --c-paper:     #FFFDF8;
+
+  --c-saffron:   #D9971C;
+  --c-saffron-2: #F0C766;
+  --c-gold:      #A9760A;
+  --c-terracotta:#BB4E2E;
+  --c-rust:      #98371D;
+  --c-clay:      #6E3A2A;
+
+  --c-ink:       #2E2018;
+  --c-ink-soft:  #4E3C2E;
+  --c-muted:     #6B5B49;
+  --c-hairline:  #E4D6BC;
+
+  --c-on-dark:        #F7EFE1;
+  --c-on-dark-soft:   #D8C6AE;
+
+  --glow-warm:  rgba(217, 151, 28, .22);
+  --shadow-sm:  0 2px 10px -6px rgba(70, 42, 20, .35);
+  --shadow-md:  0 18px 40px -28px rgba(70, 42, 20, .45);
+  --shadow-lg:  0 34px 70px -40px rgba(70, 42, 20, .5);
+
+  /* Spacing scale */
+  --space-3xs: .25rem;
+  --space-2xs: .5rem;
+  --space-xs:  .75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+  --section-y: clamp(4.5rem, 3rem + 6vw, 8.5rem);
+
+  /* Layout */
+  --rail:       min(92vw, 1220px);
+  --rail-tight: min(88vw, 940px);
+  --rail-wide:  min(94vw, 1420px);
+  --gutter:     clamp(1rem, 3vw, 2rem);
+
+  /* Shape */
+  --r-sm:   8px;
+  --r-md:   16px;
+  --r-lg:   24px;
+  --r-pill: 999px;
+
+  /* Motion */
+  --ease-out:  cubic-bezier(.22, .61, .36, 1);
+  --ease-soft: cubic-bezier(.4, 0, .2, 1);
+  --dur-fast:  .2s;
+  --dur-mid:   .4s;
+  --dur-slow:  .8s;
+
+  /* Texture */
+  --img-grain:         url("../assets/svg/grain.svg");
+}
